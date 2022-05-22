@@ -14,8 +14,11 @@ from recbole.model.sequential_recommender.narm import NARM
 from recbole.model.sequential_recommender.nextitnet import NextItNet
 from recbole.model.sequential_recommender.s3rec import S3Rec
 from recbole.model.sequential_recommender.sasrec import SASRec
+from recbole.model.sequential_recommender.sasgeo import SASGEO
+
 from recbole.model.sequential_recommender.sascts import SASCTS
 from recbole.model.sequential_recommender.sasrecf import SASRecF
+
 from recbole.model.sequential_recommender.sine import SINE
 from recbole.model.sequential_recommender.srgnn import SRGNN
 from recbole.model.sequential_recommender.stamp import STAMP

@@ -434,9 +434,10 @@ class Dataset:
         if len(columns) == 0:
             self.logger.warning(f'No columns has been loaded from [{source}]')
             return None
-
+        print("filepath:", filepath)
+        print("usecols:", usecols)
         df = pd.read_csv(
-            filepath, delimiter=field_separator, usecols=usecols, dtype=dtype, encoding=encoding, engine='python'
+            filepath, delimiter=field_separator, usecols=usecols, dtype=dtype, encoding=encoding, engine='python', error_bad_lines=False
         )
         df.columns = columns
 
